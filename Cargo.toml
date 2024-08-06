@@ -1,0 +1,5 @@
+[package]
+name="image_dctrs"
+version="0.0.1"
+authors = ["Destiny Ifeanyi<anoncomrade993@gmail.com>"]
+edition="2018"
