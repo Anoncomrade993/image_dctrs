@@ -1,5 +1,8 @@
 [package]
 name="image_dctrs"
 version="0.0.1"
-authors = ["Destiny Ifeanyi<anoncomrade993@gmail.com>"]
+authors = ["Destiny Ifeanyi<ifeanyiotah001@gmail.com>"]
 edition="2018"
+
+[dependencies]
+wasm-bindgen = "0.2.92"
