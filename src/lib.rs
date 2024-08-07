@@ -40,9 +40,9 @@ impl Image {
     ///
     /// A new Image instance
     #[wasm_bindgen(constructor)]
-    pub fn new(pixels: Uint8Array, width: usize, height: usize) -> Image {
+    pub fn new(pixels: &[u8], width: u8, height: u8) -> Image {
         let pixels_vec = pixels.to_vec();
-        Image { pixels: pixels_vec, width, height }
+        Image { pixels: pixels_vec, width:width as usize, height: height as usize}
     }
 
     /// Embeds a message into the image using DCT-based steganography
