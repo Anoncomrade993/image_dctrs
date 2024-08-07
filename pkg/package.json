@@ -1,0 +1,14 @@
+{
+  "name": "image_dctrs",
+  "collaborators": [
+    "Destiny Ifeanyi<ifeanyiotah001@gmail.com>"
+  ],
+  "version": "0.0.1",
+  "files": [
+    "image_dctrs_bg.wasm",
+    "image_dctrs.js",
+    "image_dctrs.d.ts"
+  ],
+  "main": "image_dctrs.js",
+  "types": "image_dctrs.d.ts"
+}

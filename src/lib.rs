@@ -230,9 +230,15 @@ impl Image {
                         }
                     }
                 }
+                let block_u8: Vec<u8> = block.iter().map(|&f| f.round() as u8).collect();
+                let dct = self.forward_dct(&block_u8[..]); 
+                let quantized = self.quantize(dct);
+                dct_blocks.push(quantized);
+                /***
                 let dct = self.forward_dct(&block);
                 let quantized = self.quantize(dct);
                 dct_blocks.push(quantized);
+            ***/
             }
         }
         Ok(dct_blocks)
